@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-job-tracker"
+version = "0.1.0"
+description = "Offline-safe job application email tracker"
+requires-python = ">=3.10"
+dependencies = [
+    "google-generativeai>=0.7.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+agent-job-tracker = "agent_job_tracker.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

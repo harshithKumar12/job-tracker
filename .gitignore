@@ -1,0 +1,15 @@
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+monitoring/*.jsonl
+*.egg-info/
+
+# Secrets and local environment.
+.env
+.env.*
+!.env.example
+.venv/
+venv/
